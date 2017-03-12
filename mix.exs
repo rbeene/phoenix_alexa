@@ -14,12 +14,14 @@ defmodule PhoenixAlexa.Mixfile do
   end
 
   def application do
-    [applications: []]
+    [applications: [:httpotion]]
   end
 
   defp deps do
     [{:poison, "~> 2.0"},
      {:plug, "~> 1.1"},
+     {:timex, "~> 3.0"},
+     {:httpotion, "~> 3.0.2"}
     ]
   end
 
